@@ -1,5 +1,5 @@
 {
-  "name": "dobby",
+  "name": "@sunweibin/dobby",
   "version": "0.0.1",
   "description": "前端自动化开发-发布-构建CLI工具",
   "main": "index.js",
