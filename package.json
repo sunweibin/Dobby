@@ -1,0 +1,39 @@
+{
+  "name": "dobby",
+  "version": "1.0.0",
+  "description": "前端自动化开发-发布-构建CLI工具",
+  "main": "index.js",
+  "repository": "git@github.com:sunweibin/Dobby.git",
+  "author": "sunweibin <sunweibin1988@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,vue,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.1"
+  },
+  "conifg": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
